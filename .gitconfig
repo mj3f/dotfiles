@@ -3,3 +3,13 @@
 [user]
 	name = Mike Pratt
 	email = mike@msjp.me
+	username = mj3f
+[pull]
+	rebase = false
+[core]
+	editor = nvim
+[web]
+	browser = firefox
+
+[gitflow "prefix"]
+	versiontag = v
