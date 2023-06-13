@@ -10,6 +10,7 @@ pacman_apps=(
     'neovim'        # Text editor that doesn't suck
     'wget'          # Download files
     'tmux'          # Terminal multiplexer
+    'alacritty'     # A better terminal
 
     # CLI Tools
     'jq'            # JSON parser, output and query files
