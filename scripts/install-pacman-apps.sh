@@ -26,11 +26,20 @@ pacman_apps=(
     'pnpm'          # Soy soy that's fast
     'python'        # l33t h4x0r language
     'python-pip'    # script kiddies number 1 tool?
+    'docker'
 
     # Security
     'clamav'        # Anti virus
     'gnupg'         # PGP encryption
     'openssl'       # SSL/TLS
+
+    # Misc
+    'deluge'
+    'vlc'
+    'firefox'
+    'bitwarden'
+    'discord'
+    'libreoffice-fresh'
 
     # neofetch, obviously
     'neofetch'
