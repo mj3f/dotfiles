@@ -1,5 +1,7 @@
 #! /bin/bash
 
+# (C) 2023 Mike Pratt <https://mikepratt.dev>
+
 # Apps to be installed
 pacman_apps=(
     # The bare necessities
