@@ -23,7 +23,9 @@ echo -e "${BLUE}Starting AUR apps install script..."
 echo -e "${GREY}This script will install/upgrade packages from the AUR"
 echo -e "${YELLOW}Make sure you read and understand the apps that are about to be installed!"
 echo -e "if you already have some of the apps that are to be installed, it should just update them."
-echo -e "${RESET}"
+echo -e "${YELLOW}**BEWARE that when running yay commands"
+echo -e "it may skip performing package checks, so only run this script if you're confident"
+echo -e "of the apps being installed/updated. I'm not responsible if something goes wrong! **${RESET}"
 
 # Check if running as root, if not then ask for password to proceed.
 if [ "$EUID" -ne 0 ]; then
