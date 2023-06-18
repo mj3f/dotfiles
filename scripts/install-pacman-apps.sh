@@ -41,6 +41,8 @@ pacman_apps=(
     'bitwarden'
     'discord'
     'libreoffice-fresh'
+    'i3'
+    'demnu'
 
     # neofetch, obviously
     'neofetch'
