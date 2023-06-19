@@ -8,6 +8,6 @@ The script files in this repo have been *heavily inspired* by [Lissy93/dotfiles]
 
 ## Contents
 In addition to a custom zsh terminal shell config, this repo also contains configurations for the following tools:
-- nvim (Most of which has come directly from [nvim-lua/kickstart.nvim](https://githuc.com/nvim-lua/kickstart.nvim), with some additional config overrides and plugins that I have added.)
+- nvim (Most of which has come directly from [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim), with some additional config overrides and plugins that I have added.)
 - i3 (window manager, main things that I have changed is the navigation to match vim bindings, as well as moving the i3bar to the top, there is no ricing applied (yet)).
 
