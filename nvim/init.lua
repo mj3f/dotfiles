@@ -4,14 +4,8 @@
 ==================== READ THIS BEFORE CONTINUING ====================
 =====================================================================
 
-Kickstart.nvim is *not* a distribution.
-
-Kickstart.nvim is a template for your own configuration.
-  The goal is that you can read every line of code, top-to-bottom, understand
-  what your configuration is doing, and modify it to suit your needs.
-
-  Once you've done that, you should start exploring, configuring and tinkering to
-  explore Neovim!
+This config originates from https://github.com/nvim-lua/kickstart.nvim/
+I have extended this configuration with some additional plugins and modifications.
 
   If you don't know anything about Lua, I recommend taking some time to read through
   a guide. One possible example:
@@ -20,7 +14,7 @@ Kickstart.nvim is a template for your own configuration.
   And then you can explore or search through `:help lua-guide`
 
 
-Kickstart Guide:
+Kickstart Guide (from OP):
 
 I have left several `:help X` comments throughout the init.lua
 You should run that command and read that help section for more information.
@@ -30,10 +24,6 @@ These are for you, the reader to help understand what is happening. Feel free to
 them once you know what you're doing, but they should serve as a guide for when you
 are first encountering a few different constructs in your nvim config.
 
-I hope you enjoy your Neovim journey,
-- TJ
-
-P.S. You can delete this when you're done too. It's your config now :)
 --]]
 -- Set <space> as the leader key
 -- See `:help mapleader`
@@ -246,6 +236,16 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+
+-- Custom overrides (MP)
+vim.opt.relativenumber = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.smartindent = true
+vim.opt.wrap = false
+vim.opt.colorcolumn = "80"
 
 -- [[ Basic Keymaps ]]
 
