@@ -11,3 +11,8 @@ In addition to a custom zsh terminal shell config, this repo also contains confi
 - nvim (Most of which has come directly from [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim), with some additional config overrides and plugins that I have added.)
 - i3 (window manager, main things that I have changed is the navigation to match vim bindings, as well as moving the i3bar to the top, there is no ricing applied (yet)).
 
+
+Added custom nvim lua config (WIP), note that when you install a new plugin, you need to first declare it in the plugins.lua file, then if any additional config is required, add a 'plugin-name'.lua file in the 'plugin_config/' directory.
+To install plugins, run :PackerSync command
+
+To show file icons in nerd-tree, you'll need to install a custom font [found here](https://www.nerdfonts.com/font-downloads)
