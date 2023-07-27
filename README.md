@@ -16,3 +16,11 @@ Added custom nvim lua config (WIP), note that when you install a new plugin, you
 To install plugins, run :PackerSync command
 
 To show file icons in nerd-tree, you'll need to install a custom font [found here](https://www.nerdfonts.com/font-downloads)
+
+## Installation
+- Copy the nvim files from here to ~/.config/nvim on Linux/OSX and in C:/Users/{user}/AppData/Local/nvim on Windows
+- Install a patched font from [nerd fonts](https://www.nerdfonts.com/font-downloads) (i.e. JetbrainsMono or FiraMono Nerd Font)
+    - In Arch, it's as easy as using the AUR, see the nerd fonts repo for how to do that. On OSX you can download the font(s) via homebrew. On Windows you can install the fonts either manually or via the unofficial choco package.
+- Run `nvim` for the first time, this will install all the required packages. You'll also need to run the `:PackerSync` command.
+- For windows, you may need to install a C compiler. A guide can be found [here](https://www.github.com/nvim-treesitter/wiki/Windows-support). Easiest way to do this is to install the 'Mingw' toolchain via `choco install mingw`. Then in `lua/core/plugin_config/treesitter.lua`, change the 'gcc' parser to 'c'.
+- Run nvim again to install the new C parser if running on Windows.
