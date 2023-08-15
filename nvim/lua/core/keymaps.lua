@@ -44,4 +44,5 @@ vim.o.shiftwidth = 2
 vim.o.expandtab = true
 vim.o.smartindent = true
 vim.o.wrap = false
+vim.keymap.set("i", "jk", "<ESC>", { silent = true })
 -- vim.o.colorcolumn = "80"
