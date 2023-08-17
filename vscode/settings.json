@@ -1,0 +1,42 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "telemetry.telemetryLevel": "crash",
+  "editor.mouseWheelZoom": true,
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css",
+    "typescript": "typescript"
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "nxConsole.enableTelemetry": false,
+  "redhat.telemetry.enabled": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "npm.keybindingsChangedWarningShown": true,
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "vim.useCtrlKeys": false,
+  "editor.lineNumbers": "relative",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {},
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<esc>"]
+    }
+  ]
+}
+
