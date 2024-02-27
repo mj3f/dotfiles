@@ -3,7 +3,6 @@ require("mason-lspconfig").setup({
   ensure_installed = {
     "lua_ls",
     "angularls",
-    "cssls",
     "dockerls",
     "eslint",
     "jsonls",
@@ -12,6 +11,8 @@ require("mason-lspconfig").setup({
     "tailwindcss",
     "terraformls",
     "gopls",
+    "html",
+    "cssls"
   }
 })
 
