@@ -1,7 +1,18 @@
-set scrolloff=5
-
-" Do incremental searching.
+" Inspo from https://www.cyberwizard.io/posts/the-ultimate-ideavim-setup/
+" and https://github.com/JetBrains/ideavim/discussions/303?sort=new#discussioncomment-7664118
+set scrolloff=10
+set showmode
+set showcmd
+set visualbell
+set clipboard+=unnamed
+set ignorecase
+set smartcase
 set incsearch
+set hlsearch
+set relativenumber
+
+" set leader key to spacebar.
+let mapleader = " "
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
@@ -11,49 +22,80 @@ Plug 'machakann/vim-highlightedyank'
 " Commentary plugin
 Plug 'tpope/vim-commentary'
 
+" Plugins
+set nerdtree
+set surround " Used to change double quotes to single and vice-versa around text
+set highlightedyank
+set which-key
+set easymotion
+set notimeout
+
 " Remap escape to jk
 inoremap jk <Esc>
 vnoremap jk <Esc>
 nnoremap jk <Esc>
 
-" Set relative line numbers
-set relativenumber
-
-" Plugins
-set nerdtree
-
 " Set key bindings for commonly used functionality/shortcuts provided within the IDE
 nmap <leader>f <Action>(SearchEverywhere)
-nmap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>x :NERDTreeToggle<CR>
 " nnoremap <leader>ww :action EditorTab<CR>
 nmap <leader>d <Action>(Debug)
 nmap <leader>r <Action>(RenameElement)
 nmap <leader>c <Action>(Stop)
 nmap <leader>b <Action>(ToggleLineBreakpoint)
 nmap <leader>t <Action>(ActivateTerminalToolWindow)
-" nnoremap <leader>ct :action CloseActiveTab<CR>
-nmap <leader>1 <Action>(GoToTab1)
-nmap <leader>2 <Action>(GoToTab2)
-nmap <leader>3 <Action>(GoToTab3)
-nmap <leader>4 <Action>(GoToTab4)
-nmap <leader>5 <Action>(GoToTab5)
-nmap <leader>6 <Action>(GoToTab6)
-nmap <leader>7 <Action>(GoToTab7)
-nmap <leader>8 <Action>(GoToTab8)
-nmap <leader>9 <Action>(GoToTab9)
+nmap <leader>q <action>(CloseContent) " Close active tab
+" nmap <leader>1 <Action>(GoToTab1)
+"nmap <leader>2 <Action>(GoToTab2)
+"nmap <leader>3 <Action>(GoToTab3)
+"nmap <leader>4 <Action>(GoToTab4)
+"nmap <leader>5 <Action>(GoToTab5)
+"nmap <leader>6 <Action>(GoToTab6)
+"nmap <leader>7 <Action>(GoToTab7)
+"nmap <leader>8 <Action>(GoToTab8)
+"nmap <leader>9 <Action>(GoToTab9)
 nmap <leader>[ <Action>(PreviousTab)
 nmap <leader>] <Action>(NextTab)
 
 " goto
-nmap ga <Action>(GotoAction)
-nmap gc <Action>(GotoClass)
-nmap gf <Action>(GotoFile)
-nmap gs <Action>(GotoSymbol)
-nmap gt <Action>(GotoTest)
-nmap gT <Action>(TextSearchAction)
-nmap go <Action>(GotoSuperMethod)
-nmap gd <Action>(GotoDeclaration)
-nmap gD <Action>(GotoTypeDeclaration)
-nmap gi <Action>(GotoImplementation)
-nmap gI <Action>(QuickImplementations)
-nmap gn <Action>(ShowNavBar)
+nmap <leader>gT <Action>(TextSearchAction)
+nmap <leader>go <Action>(GotoSuperMethod)
+nmap <leader>gd <Action>(GotoDeclaration)
+nmap <leader>gD <Action>(GotoTypeDeclaration)
+nmap <leader>gi <Action>(GotoImplementation)
+nmap <leader>gu <Action>(ShowUsages)
+
+" Pane navigation (Move between panes with Alt + h/j/k/l)
+nnoremap <A-h> <C-w>h
+nnoremap <A-l> <C-w>l
+nnoremap <A-k> <C-w>k
+nnoremap <A-j> <C-w>j
+
+
+" Jump between methods (doesn't work)
+"nnoremap <leader>{ <Action>(MethodUp)
+"nnoremap <leader>} <Action>(MethodDown)
+
+" Comment lines
+nnoremap <leader>c :action CommentByLineComment<CR>
+vnoremap <leader>c :action CommentByLineComment<CR>
+
+" Jump around with easymotion
+map <leader>j <Plug>(easymotion-s)
+
+" Window splits
+map <leader>wv <Action>(SplitVertically)
+map <leader>ws <Action>(SplitHorizontally)
+map <leader>wu <Action>(Unsplit)
+map <leader>wm <Action>(MoveEditorToOppositeTabGroup)
+
+" Git windows
+map <leader>gc <Action>(CheckinProject)
+map <leader>gs <Action>(ActivateVersionControlToolWindow)
+map <leader>gb <Action>(Git.Branches)
+
+" Errors
+map <leader>en <Action>(ReSharperGotoNextErrorInSolution)
+map <leader>ep <Action>(ReSharperGotoPrevErrorInSolution)
+
+
