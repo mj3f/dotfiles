@@ -33,17 +33,15 @@ set notimeout
 " Remap escape to jk
 inoremap jk <Esc>
 vnoremap jk <Esc>
-nnoremap jk <Esc>
 
 " Set key bindings for commonly used functionality/shortcuts provided within the IDE
 nmap <leader>f <Action>(SearchEverywhere)
-nnoremap <leader>x :NERDTreeToggle<CR>
-" nnoremap <leader>ww :action EditorTab<CR>
-nmap <leader>d <Action>(Debug)
-nmap <leader>r <Action>(RenameElement)
-nmap <leader>c <Action>(Stop)
-nmap <leader>b <Action>(ToggleLineBreakpoint)
-nmap <leader>t <Action>(ActivateTerminalToolWindow)
+nnoremap <leader>x :NERDTreeToggle<CR> " Open project viewer
+nmap <leader>d <Action>(Debug) " Run app in debug mode
+nmap <leader>r <Action>(RenameElement) " Rename class/method/var
+nmap <leader>c <Action>(Stop) " Stop running app
+nmap <leader>b <Action>(ToggleLineBreakpoint) " toggle breakpoint on current line
+nmap <leader>t <Action>(ActivateTerminalToolWindow) " Open Terminal window
 nmap <leader>q <action>(CloseContent) " Close active tab
 " nmap <leader>1 <Action>(GoToTab1)
 "nmap <leader>2 <Action>(GoToTab2)
@@ -81,7 +79,7 @@ nnoremap <leader>c :action CommentByLineComment<CR>
 vnoremap <leader>c :action CommentByLineComment<CR>
 
 " Jump around with easymotion
-map <leader>j <Plug>(easymotion-s)
+map <leader>m <Plug>(easymotion-s)
 
 " Window splits
 map <leader>wv <Action>(SplitVertically)
