@@ -6,7 +6,7 @@ require("mason-lspconfig").setup({
     "dockerls",
     "eslint",
     "jsonls",
-    "tsserver",
+    "ts_ls",
     "pyright",
     "tailwindcss",
     "terraformls",
