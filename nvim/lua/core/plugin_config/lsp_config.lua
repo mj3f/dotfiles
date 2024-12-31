@@ -10,7 +10,6 @@ require("mason-lspconfig").setup({
     "pyright",
     "tailwindcss",
     "terraformls",
-    "gopls",
     "html",
     "cssls"
   }
@@ -29,11 +28,10 @@ require("lspconfig").cssls.setup {}
 require("lspconfig").dockerls.setup {}
 require("lspconfig").eslint.setup {}
 require("lspconfig").jsonls.setup {}
-require("lspconfig").tsserver.setup {}
+require("lspconfig").ts_ls.setup {}
 require("lspconfig").pyright.setup {}
 require("lspconfig").tailwindcss.setup {}
 require("lspconfig").terraformls.setup {}
-require("lspconfig").gopls.setup {}
 
 -- Once lspconfig added, save, quit, re-open vim, run :Mason command to install new dependencies added.
 --
