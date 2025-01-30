@@ -6,7 +6,7 @@ require("mason-lspconfig").setup({
     "dockerls",
     "eslint",
     "jsonls",
-    "tsserver",
+    "ts_ls",
     "pyright",
     "tailwindcss",
     "terraformls",
@@ -29,7 +29,7 @@ require("lspconfig").cssls.setup {}
 require("lspconfig").dockerls.setup {}
 require("lspconfig").eslint.setup {}
 require("lspconfig").jsonls.setup {}
-require("lspconfig").tsserver.setup {}
+require("lspconfig").ts_ls.setup {}
 require("lspconfig").pyright.setup {}
 require("lspconfig").tailwindcss.setup {}
 require("lspconfig").terraformls.setup {}
