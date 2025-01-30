@@ -1,9 +1,9 @@
 [init]
 	defaultBranch = main
 [user]
-	name = Mike Pratt
-	email = mike@msjp.me
-	username = mj3f
+	name = Your Name
+	email = your@email.address
+	username = username
 [pull]
 	rebase = false
 [core]

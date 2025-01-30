@@ -27,7 +27,7 @@ install_tool () {
     read -t $PROMPT_TIMEOUT -n 1 -r
     if [[ $REPLY =~ ^[Yy]$ ]]; then
         echo -e "${BLUE} Installing ${app}...${RESET}"
-        sudo pacman -S --needed --noconfirm $app
+        sudo dnf install $app
     else
         echo -e "${RED} Cannot proceed without ${app} installed, exiting...${RESET}"
         exit 1
@@ -65,6 +65,6 @@ chsh -s /bin/zsh # TODO: test this works
 
 # Fetch oh-my-zsh
 echo -e "${BLUE} Fetching oh-my-zsh...${RESET}"
-wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)
+wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 echo -e "${GREEN} Oh-my-zsh has been installed.${RESET}"
 # TODO: Copy the .zshrc from ../zsh/ to $HOME
