@@ -47,3 +47,4 @@ vim.o.wrap = false
 vim.keymap.set("i", "jk", "<ESC>", { silent = true })
 vim.keymap.set("v", "jk", "<ESC>", { silent = true })
 -- vim.o.colorcolumn = "80"
+vim.g.mapleader= " "

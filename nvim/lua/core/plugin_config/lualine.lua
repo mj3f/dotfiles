@@ -1,5 +1,7 @@
 -- Set theme for lua line to match gruvbox, and enable icons
-require('lualine').setup {
+local config = require('lualine')
+
+config.setup({
   options = {
     icons_enabled = true,
     theme = 'gruvbox',
@@ -12,4 +14,4 @@ require('lualine').setup {
       }
     }
   }
-}
+})
