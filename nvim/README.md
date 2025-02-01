@@ -3,6 +3,14 @@ Some notes on my neovim config...
 
 The `init.lua` file located in the base directory is required for all custom nvim configs. In my case, I've modularised it such that it just imports the files that contain my actual config.
 
+## How to use
+TODO: Setup an installation script to auto-install this config.
+It is assumed you already have a fresh installation of neovim.
+
+To use this config, simply copy the contents of this directory (minus this readme file I guess) to your .config directory by running `cp -r dotfiles/nvim ~/.config` 
+(this cp command may need tweaking to fit your machine but you get the idea).
+Once this is done, simply run `nvim` and everything *should* install automatically.
+
 ## Adding plugins
 Lazy.nvim is used as the package manager, to add a new plugin, make sure you select the lazy way.
 add the plugin to the `lua/core/plugins.lua` file, under the 'plugins' table at the bottom of the file.
