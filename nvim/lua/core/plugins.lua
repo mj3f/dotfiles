@@ -85,6 +85,9 @@ local plugins = {
     'nvimdev/dashboard-nvim',
     event = 'VimEnter',
     dependencies = { {'nvim-tree/nvim-web-devicons'}}
+  },
+  {
+    'stevearc/conform.nvim'
   }
 }
 
