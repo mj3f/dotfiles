@@ -89,6 +89,7 @@ local plugins = {
 	{
 		"stevearc/conform.nvim",
 	},
+	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
 }
 
 require("lazy").setup(plugins, opts)
