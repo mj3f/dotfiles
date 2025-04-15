@@ -12,6 +12,6 @@ config.setup({
 				"filename",
 				path = 1,
 			},
-		    },
+		},
 	},
 })

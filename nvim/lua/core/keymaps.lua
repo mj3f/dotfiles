@@ -48,14 +48,18 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<ESC>", { silent = true })
 keymap.set("v", "jk", "<ESC>", { silent = true })
 
--- window management
-keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
-keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
-keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
-keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
-keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" })
-keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" })
-keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
-keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
-keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
-
+-- window manageme
+keymap.set("n", "sv", "<C-w>v", { desc = "Split window vertically" })
+keymap.set("n", "ss", "<C-w>s", { desc = "Split window horizontally" })
+keymap.set("n", "se", "<C-w>=", { desc = "Make splits equal size" })
+keymap.set("n", "sq", "<cmd>close<CR>", { desc = "Close current split" })
+-- Navigate windows
+keymap.set("n", "s", "<Nop>", { silent = true }) -- disables default nvim 's' mapping which changes line
+keymap.set("n", "sh", "<C-w>h", { desc = "Moves to left window" })
+keymap.set("n", "sj", "<C-w>j", { desc = "Moves to down window" })
+keymap.set("n", "sk", "<C-w>k", { desc = "Moves to up window" })
+keymap.set("n", "sl", "<C-w>l", { desc = "Moves to right window" })
+keymap.set("n", "s<left>", "<C-w><", { desc = "Resize window to left" })
+keymap.set("n", "s<right>", "<C-w>>", { desc = "Resize window to right" })
+keymap.set("n", "s<up>", "<C-w>+", { desc = "Resize window upwards" })
+keymap.set("n", "s<down>", "<C-w>-", { desc = "Resize window downwards" })

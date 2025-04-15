@@ -89,7 +89,11 @@ local plugins = {
 	{
 		"stevearc/conform.nvim",
 	},
-	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
+	{
+		"ThePrimeagen/harpoon",
+		branch = "harpoon2",
+		dependencies = { "nvim-lua/plenary.nvim" },
+	},
 }
 
 require("lazy").setup(plugins, opts)
