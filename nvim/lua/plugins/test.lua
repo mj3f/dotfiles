@@ -4,8 +4,6 @@ return {
     "Issafalcon/neotest-dotnet",
   },
   opts = {
-    adapters = {
-      require("neotest-dotnet"),
-    },
+    adapters = {},
   },
 }
